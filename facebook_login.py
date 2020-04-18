@@ -9,7 +9,7 @@ usr = file.readline().strip()
 pwd= file.readline().strip()
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Firefox(executable_path="C:/firefox/geckodriver.exe")
 driver.get('https://www.facebook.com/') 
 print ("Opened facebook") 
 sleep(1) 
